@@ -43,4 +43,9 @@ export function server() {
       styles(browser);
       browser.reload();
     });
+
+    gulp.watch(globalConfig.viewsDirectory + '**/*.cshtml').on('change', () => {
+      console.log('Views changed');
+      browser.reload();
+    });
 }

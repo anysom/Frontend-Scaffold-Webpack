@@ -1,5 +1,8 @@
+let siteDirectory = 'works/';
+
 let globalConfig = {
-  staticDirectory: 'works/static/',
+  staticDirectory: siteDirectory + 'static/',
+  viewsDirectory: siteDirectory + 'Views/',
   server: 'site', // Either use Server or Proxy.
   proxy: 'http://local-works.dk/', // If proxy is set, server will be ignored
   isProduction: (process.env.NODE_ENV === 'production '), // The string needs whitespace in the end, due to some bug in how the variable is passed from npm

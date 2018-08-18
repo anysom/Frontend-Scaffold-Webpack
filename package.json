@@ -13,11 +13,7 @@
     ],
     "babelrc": false
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pascalaoms/gulp4-webpack"
-  },
-  "author": "Pascal Klau",
+  "author": "Anders Nysom",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
