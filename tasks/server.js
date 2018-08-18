@@ -12,11 +12,16 @@ const bundler = webpack(webpackConfig)
 
 export function server() {
     let config = {
-        server: globalConfig.server,
-        open: false,
+        open: true,
         middleware: [
             webpackDevMiddleware(bundler, {})
         ],
+    }
+
+    if (globalConfig.proxy) {
+      config.proxy = globalConfig.proxy;
+    } else {
+      config.server = globalConfig.server;
     }
 
     browser.init(config)
