@@ -41,7 +41,6 @@ export function server() {
     gulp.watch(globalConfig.stylesDirectory + '**/*.scss').on('change', () => {
       console.log('Styles changed');
       styles(browser);
-      browser.reload();
     });
 
     gulp.watch(globalConfig.viewsDirectory + '**/*.cshtml').on('change', () => {

@@ -26,7 +26,7 @@ function styles(browser) {
     .on('error', handleError)
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest(globalConfig.staticDistDirectory + '/css'))
-    //.pipe(browser.reload({stream: true})) // TODO: Figure out how to make this work
+    .pipe(browser.stream());
 }
 
 module.exports = styles
