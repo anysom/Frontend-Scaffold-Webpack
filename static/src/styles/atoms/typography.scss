@@ -1,0 +1,80 @@
+﻿.ignite-studio-umbraco-site, .dtge-editor-placeholder {
+    font-family: $font-stack-primary;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    * {
+        color: inherit;
+    }
+
+    .primary-color {
+        color: $color-primary;
+    }
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+
+    @media (min-width: $bp-large) {
+        font-size: 22px;
+    }
+
+    &--large {
+        @extend .text;
+        font-size: 20px;
+
+        @media (min-width: $bp-large) {
+            font-size: 24px;
+        }
+    }
+
+    &--small {
+        @extend .text;
+        font-size: 16px;
+
+        @media (min-width: $bp-large) {
+            font-size: 20px;
+        }
+    }
+}
+
+
+.header {
+    line-height: 1.2;
+    font-weight: bold;
+
+    &--large {
+        @extend .header;
+        font-size: 36px;
+        line-height: 1.1;
+
+        @media (min-width: $bp-medium) {
+            font-size: 55px;
+        }
+        @media (min-width: $bp-xlarge) {
+            font-size: 70px;
+        }
+    }
+
+    &--medium {
+        @extend .header;
+        font-size: 30px;
+        font-weight: 300;
+
+        @media (min-width: $bp-xlarge) {
+            font-size: 50px;
+        }
+    }
+
+    &--small {
+        @extend .header;
+        font-size: 24px;
+        font-weight: 300;
+
+        @media (min-width: $bp-xlarge) {
+            font-size: 32px;
+        }
+    }
+}

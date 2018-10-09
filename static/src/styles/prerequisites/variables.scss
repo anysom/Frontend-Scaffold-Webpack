@@ -1,0 +1,18 @@
+﻿$color-primary: #D6808B;
+$color-dark-grey: #04323E;
+$color-medium-grey: #7D7F80;
+$color-light-grey: #D2D4D6;
+$color-bg-grey: #F7F7F7;
+
+$font-stack-primary: 'Founders Grotesk', sans-serif;
+
+/* These breakpoints map to the 4 foundation breakpoints */
+$bp-medium: 640px;
+$bp-large: 1024px;
+$bp-xlarge: 1200px;
+$bp-xxlarge: 1440px;
+
+/* CUSTOM BREAKPOINTS */
+$bp-max-col-width: 1385px; /* At this point, the colums wont get any wider */
+
+$col-size: 100/12;

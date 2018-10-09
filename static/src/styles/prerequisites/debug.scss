@@ -1,0 +1,46 @@
+﻿.debug-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1000;
+
+    &__content {
+        background-color: tomato;
+        height: 100vh;
+    }
+}
+
+body.debug {
+    &:before {
+        content: 'Small';
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background: red;
+        font-size: 16px;
+        color: white;
+        z-index: 999;
+        padding: 10px;
+
+        @media (min-width: $bp-medium) {
+            content: 'Medium';
+        }
+
+        @media (min-width: $bp-large) {
+            content: 'Large';
+        }
+
+        @media (min-width: $bp-xlarge) {
+            content: 'Extra Large';
+        }
+
+        @media (min-width: $bp-xxlarge) {
+            content: 'Extra Extra Large';
+        }
+    }
+}

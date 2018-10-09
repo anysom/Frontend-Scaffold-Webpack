@@ -1,3 +1,23 @@
 .button {
-  background: red;
+    color: white;
+    background-color: red;
+    line-height: 1;
+    padding: 14px 24px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover {
+        background-color: white;
+        color: red;
+    }
 }

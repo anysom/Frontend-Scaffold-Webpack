@@ -1,5 +1,14 @@
-@import "atoms/button.scss";
+/* Import and customize Foundation */
+@import 'vendor/foundation-sites/scss/foundation.scss';
+$breakpoint-classes: (small medium large xlarge xxlarge);
+$grid-container: 1360px;
+$grid-margin-gutters: 20px;
+$grid-padding-gutters: 20px;
+@include foundation-xy-grid-classes();
 
-body {
-  background: blue;
-}
+
+@import "prerequisites/_prerequisites.scss";
+@import "atoms/_atoms.scss";
+@import "molecules/_molecules.scss";
+@import "organisms/_organisms.scss";
+@import "pages/pages.scss";
