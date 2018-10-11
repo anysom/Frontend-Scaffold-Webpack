@@ -34,7 +34,23 @@ let webpackConfig = {
     context: path.resolve(__dirname, '../'),
     //context: path.resolve(__dirname, '../' + globalConfig.scriptsDirectory + '/'),
 
-    plugins: plugins
+    plugins: plugins,
+
+    module: {
+      rules: [
+        {
+          test: /\.js$/,
+          exclude: /(node_modules|bower_components)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['es2015'],
+              plugins: [["add-module-exports"]]
+            }
+          }
+        }
+      ]
+    }
 }
 
 

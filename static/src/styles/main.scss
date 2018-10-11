@@ -11,4 +11,9 @@ $grid-padding-gutters: 20px;
 @import "atoms/_atoms.scss";
 @import "molecules/_molecules.scss";
 @import "organisms/_organisms.scss";
-@import "pages/pages.scss";
+@import "pages/_pages.scss";
+
+
+body {
+  background: blue;
+}

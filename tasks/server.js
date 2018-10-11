@@ -6,6 +6,7 @@ import webpackDevMiddleware from 'webpack-dev-middleware'
 import globalConfig from './config';
 import { webpackConfig, scripts } from './webpack'
 import styles from './styles'
+import assets from './assets'
 
 const browser = Browser.create()
 const bundler = webpack(webpackConfig)
@@ -31,6 +32,7 @@ export function server() {
     /* TODO: Run build of all assets */
     scripts();
     styles(browser);
+    assets(browser);
 
     gulp.watch(globalConfig.scriptsDirectory + '**/*.js').on('change', () => {
       console.log('Scripts changed');
