@@ -13,6 +13,7 @@ let globalConfig = {
   }
 };
 
+globalConfig.viewsDirectory = 'site';
 globalConfig.staticSrcDirectory = globalConfig.staticDirectory + 'src/';
 globalConfig.staticDistDirectory = 'site/dist/';
 globalConfig.staticAssetsDirectory = globalConfig.staticSrcDirectory + 'assets/';
